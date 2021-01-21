@@ -1,0 +1,130 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: #262127;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1.75vw;
+  color: #7Ec291;
+  font-weight: 700;
+  padding: 4vw 4vw;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-Playbar{
+  background-color: #7Ec291;
+  padding: 1.25vw;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.App-piano{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 45%;
+  margin-top: 2vw;
+
+}
+
+.App-preset-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw 1vw;
+  margin-top: 1vw;
+  width: 95%;
+}
+.App-preset{
+  border: 0.5vw solid #7Ec291;
+  border-radius: 50%;
+  width:8vw;
+  height: 8vw;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  outline:none;
+  display: flex;
+  flex-direction: column;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4vw;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: white;
+}
+
+.material-icons.red { color: #E37B7B; }
+.material-icons.redder { color: #c4302b; }
+
+.play-button{
+  border: 0;
+  background-color: transparent;
+}
+
+.modal-instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-instructions-text{
+  font-size: medium;  
+}
+.modal-instructions-text.bold{
+  font-weight: 700;
+}
+.instruction-button{
+  border : 0;
+  border-radius: 60px;
+  height: 100%;
+  background-color: azure;
+  color: #262127;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.75vw;
+  padding: 1.25vw
+}
